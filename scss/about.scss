@@ -1,0 +1,106 @@
+.about {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  //background-color: crimson;
+
+  .about-top-section {
+    margin-top: 90px;
+
+    h1 {
+      text-decoration: none;
+      color: $black;
+      font-family: ProximaThin;
+      font-size: 60px;
+      border-bottom: $black solid 2px;
+      width: 185px;
+      margin-bottom: 36px;
+    }
+
+    p {
+      text-decoration: none;
+      color: $black;
+      font-family: Gill;
+      font-size: 16px;
+    }
+  }
+
+  .about-bottom-section {
+    margin-top: 200px;
+    margin-bottom: 180px;
+
+    h3 {
+      text-decoration: none;
+      color: $black;
+      font-family: ProximaThin;
+      font-size: 40px;
+      border-bottom: $black solid 2px;
+      width: 255px;
+      margin-bottom: 36px;
+    }
+
+    .client {
+      max-width: 676px;
+      min-height: 150px;
+      display: flex;
+      margin-bottom: 38px;
+
+      .client-image {
+        width: 260px;
+        height: 150px;
+        //background-color: darkblue;
+      }
+
+      .client1 {
+        background-image: url(../images/mb.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client2 {
+        background-image: url(../images/jw.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .client-quote {
+        position: relative;
+        //background-color: green;
+        min-height: 50px;
+        width: 100%;
+        padding-left: 25px;
+
+        p:last-of-type {
+          margin-bottom: 55px;
+        }
+
+        p {
+          text-decoration: none;
+          color: $black;
+          font-family: Gill;
+          font-size: 16px;
+        }
+
+        .client-name {
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          text-decoration: none;
+          color: $site-blue;
+          font-family: Proxima;
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .about {
+    padding: 20px;
+    .about-bottom-section {
+    }
+  }
+}

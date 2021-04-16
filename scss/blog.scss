@@ -1,0 +1,93 @@
+.blog {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+
+  .post-area {
+    margin-top: 56px;
+    margin-bottom: 100px;
+
+    h3 {
+      text-decoration: none;
+      color: $black;
+      font-family: ProximaThin;
+      font-size: 30px;
+      border-bottom: $black solid 2px;
+      width: 106px;
+      margin-bottom: 32px;
+    }
+
+    .posts {
+      max-width: 980px;
+      min-height: 376px;
+      display: flex;
+      margin-bottom: 100px;
+
+      .date-box {
+        width: 60px;
+        height: 60px;
+        background-color: $site-blue;
+        color: $white;
+        margin-right: 20px;
+        font-family: Gill;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        display: flex;
+
+        .date {
+          font-size: 22px;
+        }
+
+        .month {
+          font-size: 12px;
+        }
+      }
+
+      .post-image {
+        width: 900px;
+        height: 259px;
+      }
+
+      .post-image1 {
+        background-image: url(../images/blog.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .post-image2 {
+        background-image: url(../images/blog.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .post-text {
+        margin-top: 279px;
+        .upper-text {
+          font-size: 15px;
+          font-family: Gill;
+          max-width: 245px;
+          color: $black;
+        }
+
+        .lower-text {
+          margin-top: 20px;
+          font-size: 13px;
+          font-family: Gill;
+          max-width: 380px;
+          color: $site-blue;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .blog {
+    padding: 20px;
+    .offer {
+    }
+  }
+}

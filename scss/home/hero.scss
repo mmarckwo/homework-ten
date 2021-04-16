@@ -1,0 +1,62 @@
+.hero {
+  max-width: 1280px;
+  height: 500px;
+  margin: 0 auto;
+  background-image: linear-gradient(to right, $overlay, $overlay),
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 20px;
+
+  .main-text {
+    width: 382px;
+    height: 80px;
+    margin: 0 auto;
+    margin-top: 60px;
+
+    p {
+      padding: 10px;
+      text-align: center;
+      text-decoration: none;
+      color: $white;
+      font-family: ProximaThin;
+      font-size: 60px;
+    }
+  }
+
+  .sub-text {
+    width: 480px;
+    height: 50px;
+    margin: 0 auto;
+    justify-content: center;
+    margin-top: 20px;
+
+    p {
+      text-align: center;
+      text-decoration: none;
+      color: $white;
+      font-family: Gill;
+      font-size: 20px;
+    }
+  }
+
+  .button {
+    width: 122px;
+    height: 40px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+    button {
+      padding: 15px;
+      white-space: nowrap;
+      border: none;
+      background-color: $site-blue;
+      color: $white;
+      text-align: center;
+      text-decoration: none;
+      font-size: 15px;
+      font-family: Gill;
+    }
+  }
+}

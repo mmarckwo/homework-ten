@@ -1,0 +1,116 @@
+.special {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 20px;
+  //background-color: crimson;
+
+  .offer {
+    margin-top: 56px;
+    margin-bottom: 100px;
+
+    h3 {
+      text-decoration: none;
+      color: $black;
+      font-family: ProximaThin;
+      font-size: 30px;
+      border-bottom: $black solid 2px;
+      width: 200px;
+      margin-bottom: 36px;
+    }
+
+    .location {
+      max-width: 676px;
+      min-height: 150px;
+      display: flex;
+      margin-bottom: 60px;
+
+      .location-image {
+        width: 199px;
+        height: 287px;
+        //background-color: darkblue;
+      }
+
+      .location1 {
+        background-image: url(../images/special-offer-01.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .location2 {
+        background-image: url(../images/special-offer-02.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .location-name {
+        h3 {
+          top: 0;
+          text-decoration: none;
+          color: $black;
+          font-family: ProximaThin;
+          font-size: 30px;
+          border-bottom: $black solid 2px;
+          width: 240px;
+          margin-bottom: 22px;
+        }
+        .location-discount {
+          position: absolute;
+          width: 63px;
+          top: 5px;
+          left: 275px;
+          font-family: Proxima;
+          font-size: 20px;
+          color: #ff7d38;
+        }
+      }
+
+      .location-desc {
+        position: relative;
+        //background-color: green;
+        min-height: 131px;
+        max-width: 290px;
+        padding-left: 25px;
+
+        p:last-of-type {
+          margin-bottom: 55px;
+        }
+
+        p {
+          text-decoration: none;
+          color: $black;
+          font-family: Gill;
+          font-size: 16px;
+        }
+
+        .location-button {
+          position: absolute;
+          left: 21px;
+          bottom: 0;
+          text-decoration: none;
+          color: $white;
+          font-family: Gill;
+          font-size: 15px;
+          text-align: center;
+          height: 40px;
+          width: 133px;
+          @include siteButton();
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  .special {
+    padding: 20px;
+    .offer {
+      .location-name {
+        .location-discount {
+          max-width: 30px;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,99 @@
+.promo-tours {
+  max-width: 1280px;
+  min-height: 304px;
+  margin: -50px auto 0 auto;
+  //background-color: aqua;
+  display: flex;
+  //flex-wrap: wrap;
+  justify-content: space-around;
+  padding-left: 160px;
+  padding-right: 160px;
+
+  .promo {
+    height: 304px;
+    width: 236px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: $white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    //background-color: crimson;
+
+    .header {
+      margin: 0 auto;
+      margin-top: 50px;
+      font-family: ProximaThin;
+      font-size: 60px;
+      margin-bottom: 15px;
+    }
+
+    .header2 {
+      margin: 0 auto;
+      margin-top: 50px;
+      font-family: ProximaThin;
+      font-size: 40px;
+      margin-bottom: 15px;
+    }
+
+    .price {
+      margin-bottom: 70px;
+      text-align: center;
+      text-decoration: none;
+      color: $white;
+      font-family: ProximaThin;
+      font-size: 30px;
+    }
+
+    .blue-button {
+      width: 122px;
+      height: 40px;
+      margin: 0 auto;
+      margin-top: 70px;
+
+      button {
+        padding: 15px;
+        border: none;
+        border-radius: 25px;
+        white-space: nowrap;
+        background-color: $site-blue;
+        color: $white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 15px;
+        font-family: Gill;
+      }
+    }
+  }
+
+  .israel {
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url(../images/tours/tour-01.jpg);
+  }
+
+  .usa {
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url(../images/tours/tour-02.jpg);
+  }
+
+  .australia {
+    background-image: linear-gradient(to right, $overlay, $overlay),
+      url(../images/tours/tour-03.jpg);
+  }
+}
+
+@media only screen and (max-width: 1060px) {
+  .promo-tours {
+    width: 236px;
+    //display: block;
+    flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    .promo {
+      margin-bottom: 30px;
+    }
+  }
+}

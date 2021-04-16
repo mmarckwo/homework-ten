@@ -1,0 +1,127 @@
+.contact {
+  max-width: 980px;
+  margin: 0 auto;
+
+  h3 {
+    text-decoration: none;
+    color: $black;
+    font-family: ProximaThin;
+    font-size: 30px;
+    border-bottom: $black solid 2px;
+    width: 159px;
+    margin-top: 56px;
+  }
+
+  .contact-area {
+    //background-color: blue;
+    margin-top: 51px;
+    margin-bottom: 100px;
+    display: flex;
+
+    .map-area {
+      display: flex;
+      max-width: 400px;
+      min-height: 630px;
+
+      .contact-map {
+        width: 400px;
+        height: 442px;
+      }
+
+      .map-image {
+        background-image: url(../images/map.png);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+
+      .contact-info {
+        margin-top: 476px;
+        .contact-text {
+          font-size: 18px;
+          font-family: Gill;
+          max-width: 400px;
+          color: $black;
+        }
+      }
+    }
+
+    .form-area {
+      //background-color: red;
+      max-width: 529px;
+      min-height: 522px;
+      margin-left: 50px;
+
+      input {
+        width: 529px;
+        height: 60px;
+        padding: 10px;
+        font-family: Gill;
+        font-size: 16px;
+        margin-bottom: 21px;
+        text-decoration: none;
+        border: 0px;
+        background-color: #f5f5f5;
+      }
+
+      textarea {
+        width: 529px;
+        height: 199px;
+        padding: 10px;
+        font-family: Gill;
+        font-size: 16px;
+        text-decoration: none;
+        border: 0px;
+        background-color: #f5f5f5;
+      }
+
+      .send-button {
+        display: flex;
+        position: absolute;
+        margin-top: 20px;
+        text-decoration: none;
+        color: $white;
+        font-family: Gill;
+        font-size: 16px;
+        align-items: center;
+        justify-content: center;
+        width: 168px;
+        height: 60px;
+        @include siteButton(10px, 0px);
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 1050px) {
+  .contact {
+    padding: 0 20px 20px 20px;
+
+    h3 {
+      margin: 0 auto;
+      margin-top: 56px;
+    }
+
+    .contact-area {
+      flex-direction: column;
+
+      .map-area {
+        margin: 0 auto;
+      }
+
+      .form-area {
+        width: 429px;
+        input {
+          width: 429px;
+        }
+
+        textarea {
+          width: 429px;
+        }
+
+        margin: 0 auto;
+        margin-top: 34px;
+      }
+    }
+  }
+}
